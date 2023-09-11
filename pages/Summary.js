@@ -1,15 +1,13 @@
-'use client';
-import { useState } from 'react';
+"use client";
 function Summary({ formData }) {
   return (
-    <div id='summary'>
+    <div id="summary">
       <h2>Summary</h2>
-      <p>Form Type: </p>
-      <p>Age: </p>
+      <p>Form Type: {formData["Form Type"]} </p>
+      <p>Age: {formData?.Age}</p>
 
-      <p>DC Shows: </p>
-
-      <p>Marvel Shows: </p>
+      <p>DC Shows: {formData["DC Shows"]}</p>
+      <p>Marvel Shows: {formData["Marvel Shows"]}</p>
     </div>
   );
 }
